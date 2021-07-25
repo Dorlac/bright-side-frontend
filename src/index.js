@@ -5,21 +5,22 @@ import logo from './images/logo.png'
 
 ReactDOM.render(
   <body>
-  <nav>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet"></link>
+  <div id="nav-bar"><nav>
     <a href="https://brightsideuniversity.com">
-      <img align="left" src={logo} height="48px" width="48px" />
+      <img src={logo} height="48px" width="48px" align="left"/>
     </a>
   </nav>
-  <br />
+  </div>
   <main>
-    <h1 align="center">Bright Side School of Engineering</h1>
+    <h1 class="big-text">Bright Side School of Engineering</h1>
+    <p>This website is still in developement. Enter your email to receive progress updates.</p>
     <form action="#">
-      <p>
-        This website is still in developement.
-        Enter your email to receive progress updates.
-      </p>
-      <input id="email" type="email" placeholder="Email address" required/>
-      <button type="submit">Sign up for updates</button>
+      <input class="field" id="email" type="email" placeholder="Email address" required/>
+      <button class="field" type="submit">Sign up for updates</button>
     </form>
     </main>
     <footer>
